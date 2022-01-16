@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>mesto</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <img class="header__logo" src="./img/logo_white.svg" alt="логотип">
+        <span class="header__line"></span>
+    </header>
+    <main class="main container">
+
+        <section class="profile">
+
+            <div class="profile__wrap">
+                <img class="profile__avatar" src="./img/image.png" alt="аватар">
+                <div class="profile__info">
+                    <ul class="profile__text">
+                        <li>
+                            <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        </li>
+                        <li>
+                            <p class="profile__subtitle">Исследователь океана</p>
+                        </li>
+                    </ul>
+                    <button id="profile__edit-btn" class="profile__edit-btn"></button>
+                </div>
+            </div>
+            <button class="profile__add-btn">
+                <img src="./img/Vector.svg" alt="иконка-добавить">
+            </button>
+
+        </section>
+
+        <section class="elements">
+            <div class="elements__grid-container">
+
+                <div class="card">
+                    <img class="card__image" src="./img/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+                    <div class="card__bottom">
+                        <h2 class="card__title">Карачаевск</h2>
+                        <button class="card__btn">
+                            <img src="./img/Vector (2).svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="./img/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
+                    <div class="card__bottom">
+                        <h2 class="card__title">Гора Эльбрус</h2>
+                        <button class="card__btn">
+                            <img src="./img/Vector (2).svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="./img/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+                    <div class="card__bottom">
+                        <h2 class="card__title">Домбай</h2>
+                        <button class="card__btn">
+                            <img src="./img/Vector (2).svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="./img/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
+                    <div class="card__bottom">
+                        <h2 class="card__title">Гора Эльбрус</h2>
+                        <button class="card__btn">
+                            <img src="./img/Vector (2).svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="./img/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+                    <div class="card__bottom">
+                        <h2 class="card__title">Домбай</h2>
+                        <button class="card__btn">
+                            <img src="./img/Vector (2).svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="./img/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+                    <div class="card__bottom">
+                        <h2 class="card__title">Карачаевск</h2>
+                        <button class="card__btn">
+                            <img src="./img/Vector (2).svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    <div class="pop-up_open">
+        <div class="pop-up__container" id="popup__container">
+            <h2 class="pop-up__header">Редактировать профиль</h2>
+            <form class="pop-up__form" action="#" method="post">
+                <input class="pop-up__input" type="text" name="name" id="modal__name">
+                <input class="pop-up__input" type="text" name="aboutMe" id="modal__lastName">
+                <button class="pop-up__btn" type="submit">Сохранить</button>
+            </form>
+            <button class="pop-up__cloused">
+                <img class="button-img" src="./img/Close Icon.svg" alt="иконка закрыть">
+            </button>
+        </div>
+       
+        <div class="overlay"></div>
+    </div>
+    <footer class="footer container">
+        footer
+    </footer>
+    <script src="./pages/main.js"></script>
+</body>
+
+</html>

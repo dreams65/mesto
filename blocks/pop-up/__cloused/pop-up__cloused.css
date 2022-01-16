@@ -1,0 +1,16 @@
+.pop-up__cloused {
+    position: fixed;
+    top: -8%;
+    left: 106%;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%, -50% );
+    z-index: 10;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.pop-up__cloused:hover{
+    opacity: .6;
+}

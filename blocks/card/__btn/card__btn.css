@@ -1,0 +1,7 @@
+.card__btn {
+    max-width: 22px;
+    height: 19px;
+    border: hidden;
+    background: none;
+    cursor: pointer;
+}

@@ -5,3 +5,7 @@
     background: none;
     cursor: pointer;
 }
+
+.card__btn:hover {
+    opacity: 60%;
+}

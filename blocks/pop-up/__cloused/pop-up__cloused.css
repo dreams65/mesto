@@ -14,3 +14,9 @@
 .pop-up__cloused:hover{
     opacity: .6;
 }
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    .pop-up__cloused {
+        left: 95%;
+    }
+}

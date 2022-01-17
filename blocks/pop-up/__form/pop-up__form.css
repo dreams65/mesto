@@ -4,3 +4,9 @@
     max-width: 358px;
     width: 100%;
 }
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    .pop-up__form {
+        max-width: 238px;
+    }
+}

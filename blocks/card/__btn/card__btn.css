@@ -1,11 +1,13 @@
 .card__btn {
-    max-width: 22px;
-    height: 19px;
-    border: hidden;
-    background: none;
-    cursor: pointer;
+  min-width: 22px;
+  height: 19px;
+  border: hidden;
+  background: none;
+  cursor: pointer;
+  background-image: url("../../../img/Vector\(2\).svg");
 }
 
 .card__btn:hover {
-    opacity: 60%;
+  opacity: 50%;
+  transition: .3s;
 }

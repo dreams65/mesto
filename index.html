@@ -11,18 +11,21 @@
   <header class="header">
     <img class="header__logo" src="./img/logo_white.svg" alt="лого">
   </header>
+
+<main>
+
   <section class="profile container">
     <div class="profile__info">
       <img class="profile__avatar" src="./img/image.png" alt="аватар">
       <div class="profile__name">
         <div class="profile__wrap">
-          <h2 class="profile__title">Жак-Ив Кусто</h2>
-          <button class="profile__edit-btn"></button>
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button class="profile__edit-btn" type="button" aria-label="редактировать"></button>
         </div>
         <p class="profile__subtitle">Исследователь океана</p>
       </div>
     </div>
-    <button class="profile__add-btn"></button>
+    <button class="profile__add-btn" type="button" aria-label="добавить"></button>
   </section>
   <section class="elements container">
     <div class="elements__grid-container">
@@ -31,7 +34,7 @@
         <img class="card__image" src="./img/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
         <div class="card__bottom">
           <h2 class="card__title">Карачаевск</h2>
-          <button class="card__btn"></button>
+          <button class="card__btn" type="button" aria-label="мне нравится"></button>
         </div>
       </div>
 
@@ -39,7 +42,7 @@
         <img class="card__image" src="./img/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
         <div class="card__bottom">
           <h2 class="card__title">Гора Эльбрус</h2>
-          <button class="card__btn"></button>
+          <button class="card__btn" type="button" aria-label="мне нравится"></button>
         </div>
       </div>
 
@@ -47,7 +50,7 @@
         <img class="card__image" src="./img/kirill-pershin-1556355-unsplash.png" alt="Домбай">
         <div class="card__bottom">
           <h2 class="card__title">Домбай</h2>
-          <button class="card__btn"></button>
+          <button class="card__btn" type="button" aria-label="мне нравится"></button>
         </div>
       </div>
 
@@ -55,7 +58,7 @@
         <img class="card__image" src="./img/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
         <div class="card__bottom">
           <h2 class="card__title">Гора Эльбрус</h2>
-          <button class="card__btn"></button>
+          <button class="card__btn" type="button" aria-label="мне нравится"></button>
         </div>
       </div>
 
@@ -63,33 +66,35 @@
         <img class="card__image" src="./img/kirill-pershin-1556355-unsplash.png" alt="Домбай">
         <div class="card__bottom">
           <h2 class="card__title">Домбай</h2>
-          <button class="card__btn"></button>
+          <button class="card__btn" type="button" aria-label="мне нравится"></button>
         </div>
       </div>
 
       <div class="card">
         <img class="card__image" src="./img/kirill-pershin-1088404-unsplash.jpg" alt="Карачаево-Ч">
         <div class="card__bottom">
-          <h2 class="card__title">Карачаево-Ч...</h2>
-          <button class="card__btn"></button>
+          <h2 class="card__title">Карачаево-Черкесия</h2>
+          <button class="card__btn" type="button" aria-label="мне нравится"></button>
         </div>
       </div>
     </div>
   </section>
 
+</main>
+
   <footer class="footer container">
-      <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
+    <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
   </footer>
 
   <div class="popup" id="popup">
     <div class="popup__container" id="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
       <form class="popup__form" name="popup__form" action="#" method="post">
-        <input class="popup__input popup__input_name" type="text" name="name" id="input-name">
-        <input class="popup__input popup__input_about" type="text" name="aboutMe" id="input-about">
+        <input class="popup__input popup__input_type_name" type="text" name="name" id="input-name">
+        <input class="popup__input popup__input_type_about" type="text" name="aboutMe" id="input-about">
         <button class="popup__btn" type="submit">Сохранить</button>
       </form>
-      <button class="popup__cloused" id="popup__cloused"></button>
+      <button class="popup__close-button" type="button" id="popup__close-button"></button>
     </div>
   </div>
   <script src="./scripts/main.js"></script>

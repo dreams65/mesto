@@ -12,7 +12,7 @@
   font-size: 18px;
 }
 
-.popup__btn:hover{
+.popup__btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
   transition: .3s;
 }

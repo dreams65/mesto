@@ -10,6 +10,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  border-radius: 2px;
 }
 
 .popup__btn:hover {
@@ -21,5 +22,6 @@
   .popup__btn {
     font-size: 14px;
     height: 46px;
+    margin-top: 45px;
   }
 }

@@ -9,7 +9,7 @@
   margin: 0 0 0 24px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 530px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .popup__title {
     font-size: 18px;
     text-align: center;

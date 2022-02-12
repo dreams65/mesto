@@ -1,4 +1,6 @@
 .popup_open {
+  visibility: visible;
+  opacity: 1;
   display: flex;
   justify-content: center;
   top: 0;

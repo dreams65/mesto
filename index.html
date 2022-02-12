@@ -28,56 +28,7 @@
     <button class="profile__add-btn" type="button" aria-label="добавить"></button>
   </section>
   <section class="elements container">
-    <div class="elements__grid-container">
-
-      <div class="card">
-        <img class="card__image" src="./img/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
-        <div class="card__bottom">
-          <h2 class="card__title">Карачаевск</h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card__image" src="./img/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
-        <div class="card__bottom">
-          <h2 class="card__title">Гора Эльбрус</h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card__image" src="./img/kirill-pershin-1556355-unsplash.png" alt="Домбай">
-        <div class="card__bottom">
-          <h2 class="card__title">Домбай</h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card__image" src="./img/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
-        <div class="card__bottom">
-          <h2 class="card__title">Гора Эльбрус</h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card__image" src="./img/kirill-pershin-1556355-unsplash.png" alt="Домбай">
-        <div class="card__bottom">
-          <h2 class="card__title">Домбай</h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card__image" src="./img/kirill-pershin-1088404-unsplash.jpg" alt="Карачаево-Черкесия">
-        <div class="card__bottom">
-          <h2 class="card__title">Карачаево-Черкесия</h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
-        </div>
-      </div>
-    </div>
+    <div class="elements__grid-container"> 
   </section>
 
 </main>
@@ -86,24 +37,48 @@
     <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
   </footer>
 
-  <div class="popup" id="popup">
-    <div class="popup__container" id="popup__container">
+  <div class="popup">
+    <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
       <form class="popup__form" name="popup__form" action="#" method="post">
-        <input class="popup__input popup__input_type_name" type="text" name="name" id="input-name">
-        <input class="popup__input popup__input_type_about" type="text" name="aboutMe" id="input-about">
+        <input class="popup__input popup__input_type_name" type="text" name="name">
+        <input class="popup__input popup__input_type_about" type="text" name="aboutMe">
         <button class="popup__btn" type="submit">Сохранить</button>
       </form>
       <button class="popup__close-button" type="button" id="popup__close-button"></button>
     </div>
   </div>
 
+  <div class="popup popup_user_content">
+    <div class="popup__container">
+      <h2 class="popup__title popup__title_user_content">Новое место</h2>
+      <form class="popup__form" name="popup__form" action="#" method="post">
+        <input class="popup__input popup__input_user_image-name" type="text" placeholder="Название" name="image-name">
+        <input class="popup__input popup__input_user_image-link" type="text" placeholder="Ссылка на картинку" name="image-link">
+        <button class="popup__btn popup__btn_user_content" type="submit">Создать</button>
+      </form>
+      <button class="popup__close-button popup__close-button_user_content" type="button"></button>
+    </div>
+  </div>
+
+  <div class="popup popup_image_light-box">
+    <div class="popup__container popup__container_image_light-box">
+      <figure class="popup__figure">
+        <img class="popup__image" src="#" alt="#">
+        <figcaption class="popup__caption">Деревянная скульптура</figcaption>
+      </figure>
+      <button class="popup__close-button popup__close-button_image_light-box" type="button"></button>
+    </div>
+  </div>
+  </div>
+
   <template class="user-card">
       <div class="card">
-        <img class="card__image" src="#" alt="">
+        <img class="card__image" src="#" alt="#">
         <div class="card__bottom">
           <h2 class="card__title"></h2>
-          <button class="card__btn" type="button" aria-label="мне нравится"></button>
+          <button class="card__btn" onclick="like(this)" type="button" aria-label="мне нравится"></button>
+          <button class="card__delete" type="button" aria-label="удалить карточку"></button>
         </div>
       </div>
     </div>

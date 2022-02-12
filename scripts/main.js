@@ -62,6 +62,7 @@ function lightBox() {
 		}
 	});
 };
+
 lightBox();
 
 function renderCards(name, link) {

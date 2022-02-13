@@ -39,7 +39,6 @@ let profileTitle = document.querySelector('.profile__title');
 let profileSubtitle = document.querySelector('.profile__subtitle');
 let likeBtn = document.querySelector('.card__btn');
 
-
 //добавление карточек
 let addNameImage = document.querySelector('.popup__input_user_image-name');
 let addLinkImage = document.querySelector('.popup__input_user_image-link');
